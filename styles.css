@@ -1,0 +1,47 @@
+body {
+    margin:auto;
+    min-height: 100vh;
+    width:1024px;
+    padding:10px;
+    background-color:#ebebeb;
+    font-size:14px;
+    font-family:Verdana;
+    overflow-y: hidden;
+}
+
+input {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 209px;
+    height: 20px;
+    
+}
+
+button {
+    font-size: 45px;
+    text-align: center;
+    width: 50px;
+    border: none;
+    background-color: aqua;
+    margin: 5px;
+}
+
+#buttons {
+    position: relative;
+    left: 40%;
+    top: 400px;
+    background-color: black;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 70px;
+    padding-bottom: 10px;
+    width: 218px;
+}
+
+
+
+table {
+    justify-content: center;
+    text-align: center;
+}
