@@ -1,6 +1,11 @@
-let x = 1;
-let y = 2;
+let numbers = document.getElementsByClassName(".numberBtn");
+let display = document.getElementById("display");
+const one = document.getElementById("oneBtn");
 
+
+one.addEventListener("click", function() {
+    console.log("click")
+})
 
 function add() {
     sum = x + y;
@@ -22,4 +27,7 @@ function divide() {
     console.log(sum);
 }
 
-divide()
+function operate() {
+    add()
+}
+
