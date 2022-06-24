@@ -3,15 +3,15 @@ const number = document.querySelectorAll('.numbers div');
 const operator = document.querySelectorAll('.operators div');
 const result = document.getElementById('results');
 const clear = document.getElementById('reset');
-let a = '';
-let b = '';
+let currentString = "";
+let y = 0;
 
 function add() {
-    return a + b
+    return x + y
 }
 
 function sub() {
-    a + b
+    x + y
     console.log(sum);
 }
 
@@ -26,17 +26,21 @@ function divide() {
 }
 
 number.forEach(number => {
-    number.addEventListener('click', function() {
-        inputs.innerHTML = number.innerHTML;
+    number.addEventListener("click", () => {
+        inputs.
+        display()
     }) 
     }
 )
 
+function display() {
+    inputs.innerText = currentString; 
+}
+
 operator.forEach(operator => {
     operator.addEventListener('click', function() {
-        if (operator.innerHTML === '+') {
-            add();
-            
+        if (operator.innerText === "+") {
+            add()
         }
     }) 
     }
@@ -49,11 +53,3 @@ result.addEventListener("click", function() {
 clear.addEventListener("click", function() {
     inputs.innerHTML = " "; 
 })
-
-
-
-
-function operate() {
-    add()
-}
-
