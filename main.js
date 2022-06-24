@@ -1,19 +1,29 @@
-let numbers = document.getElementsByClassName(".numberBtn");
-let display = document.getElementById("display");
-const one = document.getElementById("oneBtn");
+const inputs = document.getElementById("inputs");
+const number = document.querySelectorAll('.numbers div');
+const operator = document.querySelectorAll('.operators div');
+const result = document.getElementById('results');
+const clear = document.getElementById('clear');
+let a = 10;
+let b = 10;
 
-
-one.addEventListener("click", function() {
+inputs.addEventListener("click", function() {
     console.log("click")
 })
 
+number.forEach(number => {
+    number.addEventListener('click', function() {
+        console.log("click");
+    }) 
+    }
+)
+
+
 function add() {
-    sum = x + y;
-    console.log(sum);
+    return a + b
 }
 
 function sub() {
-    sum = x - y;
+    a + b
     console.log(sum);
 }
 
@@ -31,3 +41,4 @@ function operate() {
     add()
 }
 
+ operate()
