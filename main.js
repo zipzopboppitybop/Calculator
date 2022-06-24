@@ -2,21 +2,9 @@ const inputs = document.getElementById("inputs");
 const number = document.querySelectorAll('.numbers div');
 const operator = document.querySelectorAll('.operators div');
 const result = document.getElementById('results');
-const clear = document.getElementById('clear');
-let a = 10;
-let b = 10;
-
-inputs.addEventListener("click", function() {
-    console.log("click")
-})
-
-number.forEach(number => {
-    number.addEventListener('click', function() {
-        console.log("click");
-    }) 
-    }
-)
-
+const clear = document.getElementById('reset');
+let a = '';
+let b = '';
 
 function add() {
     return a + b
@@ -37,8 +25,35 @@ function divide() {
     console.log(sum);
 }
 
+number.forEach(number => {
+    number.addEventListener('click', function() {
+        inputs.innerHTML = number.innerHTML;
+    }) 
+    }
+)
+
+operator.forEach(operator => {
+    operator.addEventListener('click', function() {
+        if (operator.innerHTML === '+') {
+            add();
+            
+        }
+    }) 
+    }
+)
+
+result.addEventListener("click", function() {
+    console.log("click")
+})
+
+clear.addEventListener("click", function() {
+    inputs.innerHTML = " "; 
+})
+
+
+
+
 function operate() {
     add()
 }
 
- operate()
