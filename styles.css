@@ -1,55 +1,74 @@
 body {
-    margin:auto;
+    margin: auto;
     min-height: 100vh;
-    width:1024px;
-    padding:10px;
-    background-color:#ebebeb;
-    font-size:14px;
-    font-family:Verdana;
+    width: 500px;
+    padding: 10px;
+    background-color: #ebebeb;
+    font-size: 30px;
+    font-family: Verdana;
     overflow-y: hidden;
 }
 
-p {
-    color: white;
-    font-size: 18px;
-    position: absolute;
-    top: -1px;
-    left: 50px;
-    width: 209px;
-    height: 20px;
-    
-}
-
-button {
-    font-size: 45px;
-    text-align: center;
-    width: 50px;
-    border: 1px solid black;
-    background-color: #ebebeb;
-    margin: 5px;
-}
-
-#buttons {
-    position: relative;
-    left: 40%;
-    top: 400px;
-    background-color: #ebebeb;
-    padding-top: 40px;
-    padding-left: 30px;
-    padding-right: 70px;
-    padding-bottom: 10px;
-    width: 218px;
+#container {
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px;
 }
 
-input {
-    position: absolute;
-    top: 20px;
-    left: 35px;
-    width: 240px;
+#left-panel {
+    display: inline-block;
 }
 
-table {
-    justify-content: center;
+#input {
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    height: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-left: 10px;
+    margin-right: 6px;
+    font-size: 2.5rem;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+}
+
+.operators div {
+    display: inline-block;
+    border: 1px solid #bbb;
+    border-radius: 1px;
+    width: 80px;
     text-align: center;
+    padding: 10px;
+    margin: 20px 4px 10px 0;
+    cursor: pointer;
+    background-color: #ddd;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.numbers div {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 4px 10px 0;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+div.equal {
+    display: inline-block;
+    border: 1px solid #3079ED;
+    border-radius: 1px;
+    width: 17%;
+    text-align: center;
+    padding: 127px 10px;
+    margin: 10px 6px 10px 0;
+    vertical-align: top;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #4d90fe;
+    transition: all .2s ease-in-out;
 }
